@@ -1,7 +1,68 @@
-
 body {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
-    color: #333;
+    color: #00a7e1;
     font-size: 1em;
     line-height: 1.5;
+    background-color: #003459;
+    padding: 0 8%;
 }
+
+h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+    animation: squiggly-anim 0.3s ease-in-out infinite;
+}
+
+p {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+small {
+    font-size: 1rem;
+    color: #007aa4;
+}
+
+a:link {
+    color: #00a7e1;
+}
+
+a:visited {
+    color: #00a7e1;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:active {
+    color: #00a7e1;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes squiggly-anim {
+    0% {
+        filter: url('#squiggly-0');
+    }
+
+    25% {
+        filter: url('#squiggly-1');
+    }
+
+    50% {
+        filter: url('#squiggly-2');
+    }
+
+    75% {
+        filter: url('#squiggly-3');
+    }
+
+    100% {
+        filter: url('#squiggly-4');
+    }
+}
+
