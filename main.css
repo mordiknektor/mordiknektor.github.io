@@ -3,6 +3,8 @@ html {
     background: linear-gradient(-35deg, rgb(0, 96, 165), rgb(0, 52, 89));
 }
 
+/*Typography*/
+
 body {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     color: #00a7e1;
@@ -63,11 +65,21 @@ a:active {
     margin-right: 1rem;
 }
 
+/*Layout*/
+header {
+
+}
+
+article {
+
+}
+
 footer {
     position: absolute;
     bottom: 0;
 }
 
+/*Effect*/
 @keyframes squiggly-anim {
     0% {
         filter: url('#squiggly-0');
