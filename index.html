@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 	<script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,8 @@
 	<article>
 		<ul>
 			<li><a href="https://github.com/mordiknektor/demo"><i class="material-icons">waves</i>Code samples</a></li>
-			<li><a href="#resume" onclick="alert('Resume')" title="Где резюме?"><i class="material-icons">face</i>Resume</a></li>
+			<li><a href="#resume" onclick="alert('Где резюме?')" title="Где резюме?"><i class="material-icons">face</i>Resume</a></li>
+			<li><a href="#click" onclick="$(this).parent().empty().remove()">Click me...</a></li>
 		</ul>
 	</article>
 	<footer>
