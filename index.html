@@ -54,15 +54,14 @@ function my_rand(a, b) {
 }
 
 $(document).ready( function() {
-	const start = 0;
 	const delta = 32;
 	let pint;
 	function my_fish() {
 		if (pint) {
 			clearTimeout(pint);
 		}
-		let max = Math.round($(document).height() / delta);
-		let top = start + delta * my_rand(1, max) ;
+		let max = Math.round($(document).height() / delta) - 3;
+		let top = delta * my_rand(1, max) ;
 		let left = my_rand(0, 95);
 		let transf = '';
 		if (left < 50) {
@@ -71,9 +70,9 @@ $(document).ready( function() {
 		let fish = $('<div class="fish" style="left:'+left+'%;top:'+top+'px;'+transf+'"></div>');
 		$('.pattern').after(fish);
 		setTimeout(function() { fish.empty().remove() }, 3000);		
-		pint = setTimeout(my_fish, my_rand(1000, 3000));
+		pint = setTimeout(my_fish, my_rand(3000, 6000));
 	}
-	my_fish();
+	pint = setTimeout(my_fish, 3000);
 	$(document).resize( function() {
 		my_fish();
 	});
