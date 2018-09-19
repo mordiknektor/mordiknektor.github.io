@@ -105,8 +105,8 @@ footer p {
     display: block;
     width: 96px;
     height: 64px;
-    background: url("fish.svg") center 64px no-repeat;
-    animation: fish-anim 3s ease-out;
+    background: url("fish.svg") 0 0 no-repeat;
+    animation: squiggly-anim 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 
 /*Effect*/

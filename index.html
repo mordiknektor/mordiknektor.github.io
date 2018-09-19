@@ -62,9 +62,9 @@ $(document).ready( function() {
 			clearTimeout(pint);
 		}
 		let max = Math.round($(document).height() / delta) - 3;
-		let top = start + delta * my_rand(0, max) ;
+		let bottom = start + delta * my_rand(0, max) ;
 		let left = my_rand(0, 95);
-		let fish = $('<div class="fish" style="left:'+left+'%;top:'+top+'px"></div>');
+		let fish = $('<div class="fish" style="left:'+left+'%;bottom:'+bottom+'px"></div>');
 		$('.pattern').after(fish);
 		setTimeout(function() { fish.empty().remove() }, 3000);		
 		pint = setTimeout(my_fish, my_rand(1000, 3000));
