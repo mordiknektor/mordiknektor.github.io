@@ -1,27 +1,30 @@
-html {
+html, body {
     height: 100%;
+}
+
+html {
     background: linear-gradient(-35deg, rgb(0, 96, 165), rgb(0, 52, 89));
 }
 
 /*Typography*/
-
 body {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     color: #00a7e1;
     font-size: 1em;
     line-height: 1.5;
     padding: 0 8%;
+    margin: 0;
 }
 
 h1 {
     font-size: 8rem;
     margin-bottom: 0;
-    animation: squiggly-anim 0.3s ease-in-out infinite;
+    animation: squiggly-anim 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 
 p {
     font-size: 2rem;
-    margin-top: 0;
+    margin: 0 0 1rem 0;
 }
 
 ul {
@@ -33,10 +36,6 @@ ul {
 ul li {
     float: left;
     margin-right: 2rem;
-}
-
-small {
-    font-size: 1rem;
 }
 
 a {
@@ -66,17 +65,42 @@ a:active {
 }
 
 /*Layout*/
-header {
-
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 article {
-
+   flex: 1 0 auto;
+   margin-bottom: 2rem;
 }
 
 footer {
+    flex: 0 0 auto;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.pattern {
     position: absolute;
+    top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+    z-index: -1;
+    background: url("background.svg");
+    animation: squiggly-anim 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /*Effect*/
