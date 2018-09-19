@@ -108,10 +108,8 @@ footer p {
     display: block;
     width: 96px;
     height: 64px;
-    background: url("fish.svg") center center no-repeat;
-    animation: fish-anim 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-	top:50%;
-	left:50%
+    background: url("fish.svg") center 64px no-repeat;
+    animation: fish-anim 3s ease-out;
 }
 
 /*Effect*/
