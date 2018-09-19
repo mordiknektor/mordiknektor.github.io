@@ -7,7 +7,6 @@ html {
 }
 
 /*Typography*/
-
 body {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     color: #00a7e1;
@@ -25,7 +24,7 @@ h1 {
 
 p {
     font-size: 2rem;
-    margin-top: 0;
+    margin: 0 0 1rem 0;
 }
 
 ul {
@@ -37,10 +36,6 @@ ul {
 ul li {
     float: left;
     margin-right: 2rem;
-}
-
-small {
-    font-size: 1rem;
 }
 
 a {
@@ -75,10 +70,6 @@ body {
     flex-direction: column;
 }
 
-header {
-    flex: 1 0 auto;
-}
-
 article {
    flex: 1 0 auto;
    margin-bottom: 2rem;
@@ -86,6 +77,11 @@ article {
 
 footer {
     flex: 0 0 auto;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 .pattern {
