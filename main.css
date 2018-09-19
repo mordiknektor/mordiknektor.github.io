@@ -108,8 +108,10 @@ footer p {
     display: block;
     width: 96px;
     height: 64px;
-    background: url("fish.svg");
-    animation: squiggly-anim 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    background: url("fish.svg") center center no-repeat;
+    animation: fish-anim 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+	top:50%;
+	left:50%
 }
 
 /*Effect*/
@@ -135,19 +137,9 @@ footer p {
     }
 }
 
-@keyframes move {
-	from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-	to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}
-
-
-.fish {
-	width:120px;
-	height:90px;
-	background:url('fish.svg') center center no-repeat;	
-	position:absolute;
-	top:50%;
-	left:50%;
-	animation: move  5s infinite ease-in-out;
+@keyframes fish-anim {
+	from { background-position: center 64px; }
+	50%   { background-position: center 0px; }
+	to   { background-position: center 64px; }
 }
 
