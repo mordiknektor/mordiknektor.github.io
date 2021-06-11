@@ -21,7 +21,7 @@
 		</ul>
 	</article>
 	<footer>
-		<p>&copy; 2019 mordik_nektor</p>
+		<p>&copy; 2019<span id="year"></span> mordik_nektor</p>
 	</footer>
 	<svg class="filter" xmlns="http://www.w3.org/2000/svg" version="1.1">
 		<defs>
@@ -54,6 +54,7 @@ function my_rand(a, b) {
 }
 
 $(document).ready( function() {
+	$('#year').text('—' + new Date().getFullYear());
 	const delta = 32;
 	let pint;
 	function my_fish() {
